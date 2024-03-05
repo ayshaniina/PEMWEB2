@@ -1,11 +1,11 @@
 <?php 
 // membuat array asosiatif (terdiri atas key & value)
-$mhs = ['nama' => 'Aisyah', 
+$mhs = ['nama' => 'Aisyah Haniina', 
 'nim' => '018', 
 'prodi' => 'SI', 
 'ips' => [
-    1 => 3.98,
-     2 => 3.99, 
+     1 => 4.0,
+     2 => 4.0, 
      3 => 4.0,
     ],
 ];
