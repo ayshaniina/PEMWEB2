@@ -24,7 +24,7 @@
                         Periksa
                     </a>
 
-                    <a class="nav-link" href="dokter.php">
+                    <a class="nav-link" href="paramedik.php">
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-user-doctor"></i></div>
                         Dokter
                     </a>

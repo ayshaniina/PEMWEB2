@@ -9,6 +9,8 @@ $pasiens = $dbh->query($query);
 <div class="container-fluid px-4">
     <div class="d-flex mt-4">
     <h3 class="me-auto">Periksa</h3>
+    <a href="periksacreate.php" class="btn btn-primary">Tambah Pasien</a>
+
 </div>
     <table class="table mt-4">
         <tr>
@@ -20,6 +22,7 @@ $pasiens = $dbh->query($query);
             <th>Keterangan</th>
             <th>Id Pasien</th>
             <th>Id Dokter</th>
+            <th>Opsi</th>
         </tr>
 
         <?php
@@ -35,6 +38,14 @@ $pasiens = $dbh->query($query);
             <td><?= $pasiens['keterangan'] ?></td>
             <td><?= $pasiens['pasien_id'] ?></td>
             <td><?= $pasiens['dokter_id'] ?></td>
+            <td>
+                <a href="periksaedit.php?id=<?= $pasiens['id'] ?>" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                </a>
+                <a href="periksadelete.php?id=<?= $pasiens['id'] ?>" class="btn btn-danger">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </td>
         </tr>
         <?php endforeach ?>
     </table>
